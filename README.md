@@ -3,6 +3,38 @@ Spring Web Test
 
 Spring Web with Security, JPA AND Mustache
 
+# Project 기능
+`Login`후 `카카오 책 검색` `API 통신`를 통한 `검색어`를 통해 책 검색 결과를 표시, 결과 책 리스트에서 `Bookmark` 가능
+
+
+* `API 통신` : REST API
+* `Login` : Spring Security 이용
+* `검색어` : 검색된 검색어는 사용자별 DB에 저장
+* `Bookmark` : 결과 책 리스트에서 Bookmark를 하면 사용자별 DB에 저장
+* `카카오 책 검색` : https://developers.kakao.com/docs/restapi/search#%EC%B1%85-%EA%B2%80%EC%83%89
+
+
+# Project Page
+* Book Search Page
+```
+- 검색 리스트 Pagination
+- 검색 리스트 Sort(최신순 등)
+- 책 리스트에서 Bookmark 추가
+- 타이틀 클릭시 레이어 팝업으로 책 상세정보 표시
+```
+* Search Query History List Page
+```
+- 검색어 History 리스트 Pagination
+```
+* Search Book Bookmark List Page
+```
+- 검색 리스트 Pagination
+- 검색 리스트 Sort(타이틀, 추가일 등)
+- Bookmark 리스트에서 Bookmark 삭제
+```
+
+
+
 # Spring Boot
 * Spring Boot 1.5.14
 * Gradle
@@ -25,7 +57,7 @@ Spring Web with Security, JPA AND Mustache
 * mustache:2.3.0
 * bootpag:1.0.7
 
-# Setting
+# 설정
 * Create DB
 run sql file
 src/sql/v1_create-database.sql
@@ -37,7 +69,7 @@ src/main/java/resources/application.properties
 appkey.kakao={user App Key}
 ```
 
-# How to start
+# 시작
 * Run Confiquration
 ```
 Main Class : com.example.test.TestApplication
