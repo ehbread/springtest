@@ -59,6 +59,7 @@ Login후 `카카오 책 검색` API 통신를 통한 `검색어`를 통해 책 �
 # 설정
 * Create DB
 ```
+MySQL 사용
 run sql file
 src/sql/v1_create-database.sql
 src/sql/v2_create-table.sql
