@@ -1,7 +1,7 @@
 Spring Web Test
 ============================
 
-Spring Web with Security, JPA AND Mustache
+Spring Web with Security, JPA and Mustache
 
 # Project 기능
 `Login`후 `카카오 책 검색` `API 통신`를 통한 `검색어`를 통해 책 검색 결과를 표시, 결과 책 리스트에서 `Bookmark` 가능
