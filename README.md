@@ -22,11 +22,11 @@ Spring Web with Security, JPA and Mustache
 - 책 리스트에서 Bookmark 추가
 - 타이틀 클릭시 레이어 팝업으로 책 상세정보 표시
 ```
-* Search Query History List Page
+* Query History List Page
 ```
 - 검색어 History 리스트 Pagination
 ```
-* Search Book Bookmark List Page
+* Bookmark List Page
 ```
 - 검색 리스트 Pagination
 - 검색 리스트 Sort(타이틀, 추가일 등)
