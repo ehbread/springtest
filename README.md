@@ -59,13 +59,15 @@ Spring Web with Security, JPA AND Mustache
 
 # 설정
 * Create DB
+```
 run sql file
 src/sql/v1_create-database.sql
 src/sql/v2_create-table.sql
+```
 
 * Edit properties
-src/main/java/resources/application.properties
 ```
+src/main/java/resources/application.properties
 appkey.kakao={user App Key}
 ```
 
