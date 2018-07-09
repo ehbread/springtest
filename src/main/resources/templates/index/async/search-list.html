@@ -1,0 +1,69 @@
+{{=[[ ]]=}}
+
+
+
+<script id="search-list-template" type="text/x-tmpl-mustache">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ISBN</th>
+      <th scope="col">Title</th>
+      <th scope="col">Authors</th>
+      <th scope="col">Price</th>
+      <th scope="col">Bookmark</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#content}}
+    <tr>
+      <th scope="row">{{isbn}}</th>
+      <td class="text-primary btn-title" style="cursor:pointer">
+      {{title}}
+      <div class="book-detail" style="display:none">
+
+<div class="panel panel-default">
+	<!-- Default panel contents -->
+	<div class="panel-heading"><h4>{{title}}</h4></div>
+	<div class="panel-body">
+		<img src="{{thumbnail}}"/>
+		<p>{{contents}}</p>
+	</div>
+
+	<table class="table">
+		<tr>
+			<th>Categry</th>
+			<th>Barcode</th>
+			<th>Price</th>
+			<th>Isbn</th>
+		</tr>
+		<tr>
+			<td>{{category}}</td>
+			<td>{{barcode}}</td>
+			<td>{{price}}</td>
+			<td>{{isbn}}</td>
+		</tr>
+	</table>
+</div>
+
+      </div>
+      </td>
+      <td>{{authors}}</td>
+      <td>{{price}}</td>
+      <td><button type="button" class="btn btn-warning btn-bookmark" data-json='{{json}}'><i class="glyphicon glyphicon-star"></i>book</button></td>
+    </tr>
+    {{/content}}
+    {{^content}}
+     <tr>
+      <th scope="row" class="center">결과가 없습니다.</th>
+      </tr>
+     {{/content}}
+  </tbody>
+</table>
+
+
+
+
+
+</script>
+
+[[={{ }}=]]

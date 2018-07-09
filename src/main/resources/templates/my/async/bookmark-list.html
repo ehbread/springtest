@@ -1,0 +1,36 @@
+{{=[[ ]]=}}
+
+<script id="bookmark-list-template" type="text/x-tmpl-mustache">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Title</th>
+      <th scope="col">등록일자</th>
+       <th scope="col">삭제</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#content}}
+    <tr>
+      <th scope="row">{{bookmarkId}}</th>
+      <td>{{title}}</td>
+      <td>{{createdDateFormat}}</td>
+      <td><button type="button" class="btn btn-danger btn-bookmark-remove" data-bookmarkid='{{bookmarkId}}'><i class="glyphicon glyphicon-star"></i>삭제</button></td>
+
+    </tr>
+    {{/content}}
+    {{^content}}
+     <tr>
+      <th scope="row" class="center">저장된 북마크가 없습니다.</th>
+      </tr>
+     {{/content}}
+  </tbody>
+</table>
+
+
+
+
+</script>
+
+[[={{ }}=]]

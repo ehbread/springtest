@@ -1,0 +1,23 @@
+{{#layout}}
+<h1>Bookmark List</h1>
+
+
+<div class="form-group">
+	<label class="pull-left">정렬</label>
+	<select id="sort" class="form-control" >
+		{{#searchSorts}}
+		<option value="{{.}}">{{description}}</option>
+		{{/searchSorts}}
+	</select>
+</div>
+
+<div id="bookmark-list"></div>
+
+<p id="pagination-info"></p>
+<p id="pagination-here"></p>
+
+<script src="/js/app/my/bookmarkList.js"></script>
+
+{{/layout}}
+
+{{> my/async/bookmark-list}}

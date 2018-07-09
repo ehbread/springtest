@@ -1,0 +1,55 @@
+{{#layout}}
+<h1>책 검색</h1>
+<form id="searchForm" onsubmit="return false;" method="post">
+	<div class="form-group">
+		<label class="pull-left">검색어</label>
+		<input type="input" name="query" class="form-control" placeholder="검색어를 입력하세요">
+	</div>
+	<div id="search-history">
+	</div>
+	<div class="form-group">
+		<label class="pull-left">정렬</label>
+		<select name="sort" class="form-control">
+			{{#searchSorts}}
+			<option value="{{.}}">{{description}}</option>
+			{{/searchSorts}}
+		</select>
+	</div>
+
+</form>
+
+<button type="button" class="btn btn-info" id="search-btn">검색</button>
+<hr>
+
+<div id="search-list"></div>
+
+<p id="pagination-info"></p>
+<p id="pagination-here"></p>
+
+<div id="detail-modal" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Book Detail</h4>
+			</div>
+			<div class="modal-body">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script src="/js/app/index/searchList.js"></script>
+<script src="/js/app/index/searchHistory.js"></script>
+
+
+{{> index/async/search-list}}
+{{> index/async/search-history}}
+
+{{/layout}}
+
+
