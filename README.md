@@ -4,15 +4,14 @@ Spring Web Test
 Spring Web with Security, JPA and Mustache
 
 # Project 기능
-`Login`후 `카카오 책 검색` `API 통신`를 통한 `검색어`를 통해 책 검색 결과를 표시, 결과 책 리스트에서 `Bookmark` 가능
+Login후 `카카오 책 검색` API 통신를 통한 `검색어`를 통해 책 검색 결과를 표시, 결과 책 리스트에서 `Bookmark` 가능
 
-
-* `API 통신` : REST API
-* `Login` : Spring Security 이용
 * `검색어` : 검색된 검색어는 사용자별 DB에 저장
 * `Bookmark` : 결과 책 리스트에서 Bookmark를 하면 사용자별 DB에 저장
-* `카카오 책 검색` : https://developers.kakao.com/docs/restapi/search#%EC%B1%85-%EA%B2%80%EC%83%89
+* `Layout` : Mustache Layout Header, Footer
+* `Login, Logout` : Spring Security 이용
 
+* `카카오 책 검색` : https://developers.kakao.com/docs/restapi/search#%EC%B1%85-%EA%B2%80%EC%83%89
 
 # Project Page
 * Book Search Page
