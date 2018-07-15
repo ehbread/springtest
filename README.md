@@ -72,7 +72,7 @@ appkey.kakao={user App Key}
 ```
 
 # 시작
-* Run Confiquration
+* Run Configuration
 ```
 Main Class : com.example.test.TestApplication
 ```
